@@ -34,22 +34,17 @@ public class SingleLinkedList<T> {
 	
 	public void add(int index, T value) 
 	{
-		
+		Node<T> node = new Node<T>(value, null);
 		
 		if (index == 0 && isEmpty())
 		{
-			Node<T> node = new Node<T>(value, null);
 			node.next = this.head;
 			this.head = node;
 		} 
 		else if( index != 0)
 		{
-			Node<T> node = new Node<T>(value, null);
 			Node<T> pred = nodeAt(index - 1);
-//			if(pred == null)
-//			{
-//				pred = new Node<T> (value, node.next);
-//			}
+
 			node.next = pred.next;
 			pred.next = node;
 		}

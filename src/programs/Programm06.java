@@ -6,11 +6,7 @@ public class Programm06 {
 
 	public static void main(String[] args) {
 	
-//		Node<Integer> c = new Node<Integer>(128, null);
-//		Node<Integer> b = new Node<Integer>(134, c);
-//		Node<Integer> a = new Node<Integer>(184, b);
-//		a.next = head;
-		
+
 		SingleLinkedList<Integer> sl = new SingleLinkedList<Integer>() ;
 		
 		sl.add(0, 165);
@@ -21,7 +17,7 @@ public class Programm06 {
 		
 		for(int i =0;  i < 5; i++ )
 		{
-			System.out.println(sl.get(i));
+			System.out.println("Node "+i+" :"+sl.get(i));
 		}
 	}
 
