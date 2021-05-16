@@ -4,8 +4,9 @@ package ads.project236.dataStructures;
 		T value;
 		Node<T> next;
 	
-		public Node(T value, Node<T> next) {
+		public Node(T value, Node<T> next) 
+		{
 			this.value = value;
 			this.next = next;
-	}
+		}
 }

@@ -36,7 +36,7 @@ public class SingleLinkedList<T> {
 	{
 		Node<T> node = new Node<T>(value, null);
 		
-		if (index == 0 && isEmpty())
+		if (index == 0)
 		{
 			node.next = this.head;
 			this.head = node;
