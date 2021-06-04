@@ -3,6 +3,7 @@ package ads.project236.dataStructures;
 public class SingleLinkedListInt {
 	
 	private NodeInt head;
+	
 	public SingleLinkedListInt() 
 	{
 		this.head = null;
@@ -17,7 +18,7 @@ public class SingleLinkedListInt {
 	{
 		NodeInt node = nodeAt(index);
 		int value = node.value;
-	return value;
+		return value;
 	}
 	
 	private NodeInt nodeAt(int index) 
@@ -30,16 +31,16 @@ public class SingleLinkedListInt {
 		return current;
 	}
 	
-	public void add(int index, int e) 
+	public void add(int index, int value) 
 	{
 		if (index == 0) 
 		{
-			this.head = new NodeInt(e, this.head);
+			this.head = new NodeInt(value, this.head);
 		} 
 		else 
 		{
 			NodeInt pred = nodeAt(index - 1);
-			pred.next = new NodeInt(e, pred.next);
+			pred.next = new NodeInt(value, pred.next);
 		}
 	}
 	
